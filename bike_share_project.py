@@ -107,7 +107,6 @@ def get_filters():
     print("Thanks!  You have chosen:\n     CITY: " + citydisplay + "\n    MONTH: " + displaymonth + "\n      DAY: " + daydisplay)
     print("^*"*23 + "\n")
 
-    #print("~"*28 + "\nCODE HAS NOT BROKEN YET! 001\n" + "~"*28)
     return citychoice, monthchoice, daychoice
 
 
@@ -167,7 +166,6 @@ def load_data(citychoice, monthchoice, daychoice):
     if daychoice != "all":
         df = df[df["day_of_week"] == daychoice]
 
-    #print("~"*28 + "\nCODE HAS NOT BROKEN YET! 002\n" + "~"*28)
     return df
 
 
@@ -226,9 +224,6 @@ def time_stats(df):
     print("This took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-    #print("~"*28 + "\nCODE HAS NOT BROKEN YET! 003\n" + "~"*28)
-
-
 def station_stats(df):
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -250,9 +245,6 @@ def station_stats(df):
     print("This took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-    #print("~"*28 + "\nCODE HAS NOT BROKEN YET! 004\n" + "~"*28)
-
-
 def trip_duration_stats(df):
 
     print('\nCalculating Trip Duration...\n')
@@ -271,8 +263,6 @@ def trip_duration_stats(df):
     print('-'*40)
     print("This took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-    #print("~"*28 + "\nCODE HAS NOT BROKEN YET! 005\n" + "~"*28)
 
 def user_stats(df):
     global citycity
@@ -306,8 +296,6 @@ def user_stats(df):
         print("\nWashington State does not collect demographic information on its users.")
     else:
         print("This should not ever print")
-
-    #print("~"*28 + "\nCODE HAS NOT BROKEN YET! 006\n" + "~"*28)
 
 def main():
     while True:
