@@ -29,7 +29,7 @@ def get_filters():
     oops = "\nI'm sorry, that was an invalid entry.  Please try again\n"
     question = "\n Please input the first three letters of the {} you would like to view data for: \n{}"
     #note to self: review data BEFORE assuming things
-    oopsmonth = "\nFor some reason that month isn't in the data.\nPlease only select a month from January to June."
+    oopsmonth = "\nOnly data from January to June is available.\nPlease select a month from January to June."
 
     print('\nHello! Let\'s explore some US bikeshare data, but more importantly demonstrate Git & GitHub proficiency!')
     """
@@ -91,7 +91,7 @@ def get_filters():
     elif monthchoice == "all":
         displaymonth = "January to June.  (no data available for July to December)"
     else:
-        print("Why must you break the program :(")
+        print("You broke the program :(")
 
     if daychoice == "mon":
         daydisplay = "Monday"
@@ -110,7 +110,7 @@ def get_filters():
     elif daychoice == "all":
         daydisplay = "Everyday!"
     else:
-        print("Broken Program = Much Sad.")
+        print("You broke the program :(")
 
     print("\n" + "^*"*25)
     print("Thanks!  You have chosen:\n     CITY: " + citydisplay + "\n    MONTH: " + displaymonth + "\n      DAY: " + daydisplay)
@@ -143,7 +143,7 @@ def load_data(citychoice, monthchoice, daychoice):
     elif daychoice == "all":
         daychoice = "all"
     else:
-        print("Congratulations!  You broke the program(daychoice)!")
+        print("You broke the program :("")
 
     if monthchoice == "jan":
         monthchoice = 1
@@ -160,7 +160,7 @@ def load_data(citychoice, monthchoice, daychoice):
     elif monthchoice == "all":
         monthchoice = "all"
     else:
-        print("Congratulations!  You broke the program(monthchoice)!")
+        print("You broke the program :(")
 
 
     """
@@ -220,7 +220,7 @@ def time_stats(df):
     elif xday == 6:
         xday = "Sunday"
     else:
-        print("Congratulations!  You broke the program(dayniceread)!")
+        print("You broke the program :(")
 
     if xmonth == 1:
         xmonth = "January"
@@ -236,7 +236,7 @@ def time_stats(df):
         xmonth = "June"
 
     else:
-        print("Congratulations!  You broke the program(monthniceread)!")
+        print("You broke the program :(")
 
     #print the popular times
     print("~"*50)
@@ -287,8 +287,7 @@ def trip_duration_stats(df):
 
     print("~"*50)
     print("Total trave time: " + str(mins) + " minutes")
-    if mins == 300000:
-        print("Weird how every city's total is exactly 300000.  I spent a sad amount of time trying to debug this because it seemed really sus.")
+    
     # display mean travel time
 
     print("~"*50 + "\n")
