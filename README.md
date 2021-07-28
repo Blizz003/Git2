@@ -1,11 +1,11 @@
 ### Date created
-28/07/2021
+The twenty-eighth of July, two-thousand-twenty-one, Common Era.
 
 ### Project Title
-Git Project
+Git & GitHub Project
 
 ### Description
-Use git and github
+Demonstrate proficiency in the use of Git and GitHub
 
 ### Files used
 bike_share_project.py
