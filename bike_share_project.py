@@ -31,7 +31,7 @@ def get_filters():
     #note to self: review data BEFORE assuming things
     oopsmonth = "\nFor some reason that month isn't in the data.\nPlease only select a month from January to June."
 
-    print('\nHello! Let\'s explore some US bikeshare data!')
+    print('\nHello! Let\'s explore some US bikeshare data, but more importantly demonstrate Git & GitHub proficiency!')
     """
     Asks user to specify a city, month, and day to analyze.
 
