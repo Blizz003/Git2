@@ -32,15 +32,6 @@ def get_filters():
     oopsmonth = "\nFor some reason that month isn't in the data.\nPlease only select a month from January to June."
 
     print('\nHello! Let\'s explore some US bikeshare data!')
-    """
-    Asks user to specify a city, month, and day to analyze.
-
-    Returns:
-        (str) citychoice - first three letters of city to anlayze
-        (str) monthchoice - first three letters of month to analyze (or all)
-        (str) daychoice - first three letters of day to analyze (or all)
-    """
-
 
     while citychoice not in validcity:
         citychoice = input(question.format("city", "Chicago, New York or Washington: "))
@@ -162,18 +153,6 @@ def load_data(citychoice, monthchoice, daychoice):
     else:
         print("Congratulations!  You broke the program(monthchoice)!")
 
-
-    """
-    Loads data for the specified city and filters by month and day if applicable.
-
-    Args:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    Returns:
-        df - Pandas DataFrame containing city data filtered by month and day
-    """
-
         #Load chosen csv and get month and day in new columns
     df = pd.read_csv(CITY_DATA[citychoice])
     df["Start Time"] = pd.to_datetime(df["Start Time"])
@@ -193,7 +172,6 @@ def load_data(citychoice, monthchoice, daychoice):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -252,7 +230,6 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -277,7 +254,6 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -297,8 +273,6 @@ def trip_duration_stats(df):
     print('-'*40)
 
     #print("~"*28 + "\nCODE HAS NOT BROKEN YET! 005\n" + "~"*28)
-
-
 
 def user_stats(df):
     global citycity
